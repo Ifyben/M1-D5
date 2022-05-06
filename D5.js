@@ -11,16 +11,33 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculates the a
 */
  console.log("\n--------------<Exercise 1>----------------") 
  
- const areaOfARectangle = function(firstNumber, secondNumber) {
+ const areaOfARectangle = function(firstNumber, secondNumber) { 
      let result = firstNumber * secondNumber
      return result
  }
+
+ console.log("\n----------------<Test>----------------")
 let areaOfRectB = areaOfARectangle(11, 12) 
  console.log(areaOfRectB)
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
+console.log("\n------------<Exercise 2>-------------")
+
+const crazySum = function(firstInteger , secondInteger) {
+    if(firstInteger !== secondInteger) {
+        return firstInteger + secondInteger
+    } else {
+        return (firstInteger + secondInteger) * 3
+    }
+}
+console.log("\n----------------<Test>----------------")
+let sum = crazySum(5 , 2) 
+console.log(sum) 
+
+let sum2 = crazySum(5 , 5) 
+console.log(sum2)
 
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
